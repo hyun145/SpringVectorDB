@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://poly:poly1234@hyun.ogsviys.mongodb.net/myDB?retryWrites=true&w=majority&appName=hyun
