@@ -1,0 +1,33 @@
+server:
+  port: 11000
+
+embedding:
+  api:
+    url: http://localhost:12000
+
+spring:
+  application:
+    name: spring-vectordb
+
+  data:
+    mongodb:
+      uri: mongodb+srv://poly:poly1234@hyun.ogsviys.mongodb.net/myDB?retryWrites=true&w=majority&appName=hyun
+#      uri: mongodb+srv://jun1234755:nnxA64zlNDg9xECB@cluster0.lyypdxf.mongodb.net/myDB?retryWrites=true&w=majority&appName=Cluster0
+
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeOut: 6000000
+        readTimeout: 6000000
+
